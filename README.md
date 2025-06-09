@@ -45,7 +45,7 @@ This portfolio showcases projects that demonstrate my ability to tackle complex 
 📄 [View Research Summary](./project2_liver_disease/summary.md)  
 📊 [Statistical Analysis](./project2_liver_disease/statistics.html)
 
-![Liver Disease Hotspots](./images/liver_disease_hotspot_sample.png)
+![image_alt]([./images/liver_disease_hotspot_sample.png](https://github.com/Cwecu/portfolio/blob/c57e959b1f66688e7b2b9ab7fef75d2c6017a76b/liver_disease_hotspot_sample.png.jpg))
 
 ---
 
