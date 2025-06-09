@@ -7,7 +7,7 @@ url: "https://cwecu.github.io" # replace with your GitHub Pages URL
 theme: minima
 
 # GitHub repository settings
-repository: cwecu/your-repo-name # replace with your GitHub repo
+repository: cwecu/portfolio # replace with your GitHub repo
 
 # Author settings
 author:
