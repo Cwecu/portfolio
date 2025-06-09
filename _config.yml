@@ -1,0 +1,33 @@
+title: Nicholas Lawson GIS Portfolio
+description: A professional portfolio showcasing GIS and spatial analysis projects by Nicholas Lawson.
+baseurl: "" # leave this blank unless you're using a subfolder
+url: "https://cwecu.github.io" # replace with your GitHub Pages URL
+
+# Theme settings
+theme: minima
+
+# GitHub repository settings
+repository: yourusername/your-repo-name # replace with your GitHub repo
+
+# Author settings
+author:
+  name: Nicholas Lawson
+  email: your.email@example.com
+
+# Social links (optional)
+social_links:
+  linkedin: https://www.linkedin.com/in/your-profile
+  github: https://github.com/yourusername
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude these files from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
