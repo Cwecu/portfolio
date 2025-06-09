@@ -28,7 +28,7 @@ This portfolio showcases projects that demonstrate my ability to tackle complex 
 📄 [View Detailed Analysis](./project1_food_deserts/summary.md)  
 🗺️ [Interactive Map](./project1_food_deserts/map.html)
 
-![Food Desert Analysis](./images/food_desert_map_sample.png)
+!![image_alt](https://github.com/Cwecu/portfolio/blob/f5faa71c0838d615f0cf436cf56a4de725b5a809/food_desert_map_sample.png.jpg)
 
 ---
 
