@@ -3,7 +3,7 @@
 ![image_alt](https://github.com/Cwecu/portfolio/blob/f5faa71c0838d615f0cf436cf56a4de725b5a809/profile.jpg.jfif)
 
 
-## 👋 About Me
+About Me
 
 I'm **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spatial analysis, and health geography. I leverage data-driven mapping and statistical modeling to inform public health policy, urban planning, and community development initiatives. 
 
