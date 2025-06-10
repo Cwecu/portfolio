@@ -119,8 +119,8 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 **Programming & Data**
 - Python (ArcPy, Pandas, GeoPandas)
 - SQL for spatial databases
-- R for statistical modeling
-- Web mapping: Leaflet, ArcGIS Online
+- SPSS
+- Web mapping: ArcGIS Pro, ArcGIS Online
 
 **Professional Experience**
 - Project design, research, and execution
@@ -131,15 +131,19 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 
 ## 🎓 Education & Certifications
 
-**Bachelor of Science in Geography**  
-_University of North Texas, 2024_  
-_Concentration: Geographic Information Systems_
+**Master of Science in Geography**  
+_University of North Texas, 2025_  
+_Concentration: Geographic Information Systems & Health and Medical Geography_
 
 **Relevant Coursework**
 - Advanced GIS Analysis
 - Health Geography  
 - Urban Planning
 - Spatial Statistics
+
+  **Bachelor of Art in Geography and Resource Development**  
+_University of Ghana, 2018_  
+_Concentration: Geographic Information Systems,  Cities and Urbanisation, Transportation_
 
 ---
 
