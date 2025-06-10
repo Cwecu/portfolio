@@ -11,6 +11,35 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 - **Analysis:** Geographically Weighted Regression (GWR), Network Analysis, Hotspot Analysis
 - **Specializations:** Health Geography, Urban Planning, LiDAR Processing
 
+- <style>
+.slider1, .slider2, .slider3 {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.slider1 .slides, .slider2 .slides, .slider3 .slides {
+  display: flex;
+  width: 300%;
+  animation: slide 15s infinite;
+}
+.slider1 img, .slider2 img, .slider3 img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  33% { transform: translateX(0%); }
+  36% { transform: translateX(-100%); }
+  66% { transform: translateX(-100%); }
+  69% { transform: translateX(-200%); }
+  100% { transform: translateX(-200%); }
+}
+</style>
+
 ---
 
 ## 🍎 Project 1: 🌆 Urbanization, Food Security & Spatial Access in DFW
@@ -32,10 +61,17 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 - Food desert tracts (expanded definition): 1,010 (10% reduction)
 - Low-income food desert tracts dropped from 385 to 325 (16% reduction)
 
-- <img src="./food_desert_map_sample.png.jpg" alt="Food Desert Analysis" style="width: 100%; max-width: 600px;" />
+- **Slideshow:**
+<div class="slider1">
+  <div class="slides">
+    <img src="./food_desert_map_sample.png.jpg" alt="Map 1">
+    <img src="./Food Deserts hotspot.jpg" alt="Map 2">
+    <img src="./Food Access.jpg" alt="Map 3">
+  </div>
+</div>
 
 
-## 🍎 Food Deserts and Chronic Disease in DFW: Association vs. Causality
+## 🍎 Project 2: Food Deserts and Chronic Disease in DFW: Association vs. Causality
 
 **Objective:**  
 Examine the spatial relationship between food desert classification and the prevalence of obesity and diabetes using regression models.
@@ -60,6 +96,15 @@ Used Geographically Weighted Regression (GWR) to test local associations between
 - Obesity model R² = **0.89**
 - Diabetes model R² = **0.82**
 
+**Slideshow:**
+<div class="slider2">
+  <div class="slides">
+    <img src="./GWR and Obesity.jpg" alt="Obesity GWR">
+    <img src="./GWR and Diabtes.jpg" alt="Diabetes GWR">
+    <img src="./Obesity and Food Deserts.jpg" alt="Obesity FD">
+  </div>
+</div>
+
 **Interpretation:**  
 Food access is **associated** with poor health outcomes in specific areas, but **causality** is best explained through a broader social determinants framework. Spatial modeling helps identify where food environments align with health risks, guiding targeted interventions.
 
@@ -67,7 +112,7 @@ Food access is **associated** with poor health outcomes in specific areas, but *
 
 ---
 
-## 🏥 Project 2: Liver Disease Mortality Patterns in Texas
+## 🏥 Project 3: Liver Disease Mortality Patterns in Texas
 
 **Challenge:** Understanding the geographic distribution and temporal trends of liver disease mortality to identify at-risk communities.
 
@@ -87,12 +132,21 @@ Food access is **associated** with poor health outcomes in specific areas, but *
   - Hispanic population (R² = 0.32)
   - Obesity (R² = 0.30)
   - Income (R² = 0.25)
+ 
+    **Slideshow:**
+<div class="slider3">
+  <div class="slides">
+    <img src="./liver_disease_hotspot_sample.png.jpg" alt="LD Hotspot">
+    <img src="./AADR 2001-2007.jpg" alt="AADR 1">
+    <img src="./AADR 2008-2014.jpg" alt="AADR 2">
+  </div>
+</div>
 
 **Interpretation:**
 - Public health risks are spatially clustered and vary regionally.
 - Policy focus should be tailored for regions like South Texas where multiple risk factors converge.
 
-<img src="./liver_disease_hotspot_sample.png.jpg" alt="Liver Disease Hotspots" style="width: 100%; max-width: 600px;" />
+
 
 ---
 
