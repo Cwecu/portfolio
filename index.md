@@ -28,7 +28,8 @@ This portfolio showcases projects that demonstrate my ability to tackle complex 
 📄 [View Detailed Analysis](./project1_food_deserts/summary.md)  
 🗺️ [Interactive Map](./project1_food_deserts/map.html)
 
-<img src="./images/food_desert_map_sample.png" alt="Food Desert Analysis" style="width: 100%; max-width: 600px;" />
+<img src="./images/food_desert_map_sample.png.jpg" alt="Food Desert Analysis" style="width: 100%; max-width: 600px;" />
+
 
 
 ---
