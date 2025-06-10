@@ -188,3 +188,63 @@ _Concentration: Geographic Information Systems, Cities and Urbanisation, Transpo
 **Relevant Coursework**
 - Advanced GIS Analysis
 - Health Geography
+
+<style>
+  /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 500px;  /* Set a fixed height for proper slideshow behavior */
+    margin: 20px auto 40px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* Style for the images */
+  .slideshow-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image covers the container without distortion */
+    display: none;
+    transition: opacity 1s ease-in-out;  /* Smooth transition */
+  }
+  /* Show active images */
+  .slideshow-container img.active {
+    display: block;
+    opacity: 1;
+  }
+  .slideshow-container img.inactive {
+    opacity: 0;
+  }
+</style>
+
+<script>
+  // Slideshow function for each slideshow container
+  function initSlideshow(containerId, interval=4000) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    const slides = container.querySelectorAll('img');
+    let current = 0;
+
+    // Start by showing the first image
+    slides[current].classList.add('active');
+    slides[current].classList.remove('inactive');
+
+    setInterval(() => {
+      slides[current].classList.add('inactive');  // Hide the current image
+      slides[current].classList.remove('active'); // Remove active class
+
+      current = (current + 1) % slides.length;  // Move to the next slide
+
+      slides[current].classList.add('active');  // Show the next image
+      slides[current].classList.remove('inactive');  // Ensure the new image fades in
+    }, interval);
+  }
+
+  // Initialize all slideshows
+  document.addEventListener('DOMContentLoaded', () => {
+    initSlideshow('slideshow1', 4000);
+    initSlideshow('slideshow2', 5000);
+    initSlideshow('slideshow3', 4500);
+  });
+</script>
