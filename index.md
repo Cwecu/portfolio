@@ -30,6 +30,7 @@ This portfolio showcases projects that demonstrate my ability to tackle complex 
 
 <img src="./images/food_desert_map_sample.png" alt="Food Desert Analysis" style="width: 100%; max-width: 600px;" />
 
+
 ---
 
 ## 🏥 Project 2: Liver Disease Mortality Patterns in Texas
