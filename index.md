@@ -17,99 +17,96 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
   width: 100%;
   max-width: 800px;
   margin: 20px auto;
-  overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   background-color: #f8f9fa;
 }
 
-.slider1 .slides {
-  display: flex;
-  animation: slide3 15s infinite;
-}
-
-.slider2 .slides {
-  display: flex;
-  animation: slide4 20s infinite;
-}
-
-.slider3 .slides {
-  display: flex;
-  animation: slide6 30s infinite;
-}
-
-.slider1 .slides {
-  width: 300%;
-}
-
-.slider2 .slides {
-  width: 400%;
-}
-
-.slider3 .slides {
-  width: 600%;
-}
-
-.slider1 img {
-  width: calc(100% / 3);
+.slider1 img, .slider2 img, .slider3 img {
+  width: 100%;
   height: auto;
+  display: none;
+  border-radius: 10px;
+}
+
+.slider1 img:first-child, .slider2 img:first-child, .slider3 img:first-child {
   display: block;
-  flex-shrink: 0;
+  animation: fadeSlide3 15s infinite;
 }
 
-.slider2 img {
-  width: calc(100% / 4);
-  height: auto;
-  display: block;
-  flex-shrink: 0;
+.slider2 img:first-child {
+  animation: fadeSlide4 20s infinite;
 }
 
-.slider3 img {
-  width: calc(100% / 6);
-  height: auto;
-  display: block;
-  flex-shrink: 0;
+.slider3 img:first-child {
+  animation: fadeSlide6 30s infinite;
 }
 
-/* Animation for 3 images */
-@keyframes slide3 {
-  0% { transform: translateX(0%); }
-  30% { transform: translateX(0%); }
-  33% { transform: translateX(-33.33%); }
-  63% { transform: translateX(-33.33%); }
-  66% { transform: translateX(-66.66%); }
-  96% { transform: translateX(-66.66%); }
-  100% { transform: translateX(0%); }
+.slider1 img:nth-child(2) {
+  animation: fadeSlide3 15s infinite 5s;
 }
 
-/* Animation for 4 images */
-@keyframes slide4 {
-  0% { transform: translateX(0%); }
-  22% { transform: translateX(0%); }
-  25% { transform: translateX(-25%); }
-  47% { transform: translateX(-25%); }
-  50% { transform: translateX(-50%); }
-  72% { transform: translateX(-50%); }
-  75% { transform: translateX(-75%); }
-  97% { transform: translateX(-75%); }
-  100% { transform: translateX(0%); }
+.slider1 img:nth-child(3) {
+  animation: fadeSlide3 15s infinite 10s;
 }
 
-/* Animation for 6 images */
-@keyframes slide6 {
-  0% { transform: translateX(0%); }
-  14% { transform: translateX(0%); }
-  16.66% { transform: translateX(-16.66%); }
-  30.66% { transform: translateX(-16.66%); }
-  33.33% { transform: translateX(-33.33%); }
-  47.33% { transform: translateX(-33.33%); }
-  50% { transform: translateX(-50%); }
-  64% { transform: translateX(-50%); }
-  66.66% { transform: translateX(-66.66%); }
-  80.66% { transform: translateX(-66.66%); }
-  83.33% { transform: translateX(-83.33%); }
-  97.33% { transform: translateX(-83.33%); }
-  100% { transform: translateX(0%); }
+.slider2 img:nth-child(2) {
+  animation: fadeSlide4 20s infinite 5s;
+}
+
+.slider2 img:nth-child(3) {
+  animation: fadeSlide4 20s infinite 10s;
+}
+
+.slider2 img:nth-child(4) {
+  animation: fadeSlide4 20s infinite 15s;
+}
+
+.slider3 img:nth-child(2) {
+  animation: fadeSlide6 30s infinite 5s;
+}
+
+.slider3 img:nth-child(3) {
+  animation: fadeSlide6 30s infinite 10s;
+}
+
+.slider3 img:nth-child(4) {
+  animation: fadeSlide6 30s infinite 15s;
+}
+
+.slider3 img:nth-child(5) {
+  animation: fadeSlide6 30s infinite 20s;
+}
+
+.slider3 img:nth-child(6) {
+  animation: fadeSlide6 30s infinite 25s;
+}
+
+@keyframes fadeSlide3 {
+  0% { display: block; opacity: 1; }
+  30% { display: block; opacity: 1; }
+  33% { display: block; opacity: 0; }
+  34% { display: none; opacity: 0; }
+  99% { display: none; opacity: 0; }
+  100% { display: block; opacity: 1; }
+}
+
+@keyframes fadeSlide4 {
+  0% { display: block; opacity: 1; }
+  22% { display: block; opacity: 1; }
+  25% { display: block; opacity: 0; }
+  26% { display: none; opacity: 0; }
+  99% { display: none; opacity: 0; }
+  100% { display: block; opacity: 1; }
+}
+
+@keyframes fadeSlide6 {
+  0% { display: block; opacity: 1; }
+  14% { display: block; opacity: 1; }
+  16% { display: block; opacity: 0; }
+  17% { display: none; opacity: 0; }
+  99% { display: none; opacity: 0; }
+  100% { display: block; opacity: 1; }
 }
 </style>
 
@@ -136,11 +133,9 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 
 **Slideshow:**
 <div class="slider1">
-  <div class="slides">
-    <img src="./food_desert_map_sample.png.jpg" alt="Food Desert Map Analysis">
-    <img src="./Food Deserts hotspot.jpg" alt="Food Desert Hotspot Analysis">
-    <img src="./Food Access.jpg" alt="Food Access Comprehensive Map">
-  </div>
+  <img src="./food_desert_map_sample.png.jpg" alt="Food Desert Map Analysis">
+  <img src="./Food Deserts hotspot.jpg" alt="Food Desert Hotspot Analysis">
+  <img src="./Food Access.jpg" alt="Food Access Comprehensive Map">
 </div>
 
 ---
@@ -172,12 +167,10 @@ Used Geographically Weighted Regression (GWR) to test local associations between
 
 **Slideshow:**
 <div class="slider2">
-  <div class="slides">
-    <img src="./GWR and Obesity.jpg" alt="Geographically Weighted Regression - Obesity Analysis">
-    <img src="./GWR and Diabtes.jpg" alt="Geographically Weighted Regression - Diabetes Analysis">
-    <img src="./Obesity and Food Deserts.jpg" alt="Obesity and Food Deserts Correlation">
-    <img src="./Diabetes and Food deserts.jpg" alt="Diabetes and Food Deserts Correlation">
-  </div>
+  <img src="./GWR and Obesity.jpg" alt="Geographically Weighted Regression - Obesity Analysis">
+  <img src="./GWR and Diabtes.jpg" alt="Geographically Weighted Regression - Diabetes Analysis">
+  <img src="./Obesity and Food Deserts.jpg" alt="Obesity and Food Deserts Correlation">
+  <img src="./Diabetes and Food deserts.jpg" alt="Diabetes and Food Deserts Correlation">
 </div>
 
 **Interpretation:**  
@@ -208,14 +201,12 @@ Food access is **associated** with poor health outcomes in specific areas, but *
  
 **Slideshow:**
 <div class="slider3">
-  <div class="slides">
-    <img src="./liver_disease_hotspot_sample.png.jpg" alt="Liver Disease Mortality Hotspot Analysis">
-    <img src="./AADR 2001-2007.jpg" alt="Age-Adjusted Death Rates 2001-2007">
-    <img src="./AADR 2008-2014.jpg" alt="Age-Adjusted Death Rates 2008-2014">
-    <img src="./AADR 2015-2020.jpg" alt="Age-Adjusted Death Rates 2015-2020">
-    <img src="./Rate Change 1.jpg" alt="Mortality Rate Change Analysis 1">
-    <img src="./Rate change 2.jpg" alt="Mortality Rate Change Analysis 2">
-  </div>
+  <img src="./liver_disease_hotspot_sample.png.jpg" alt="Liver Disease Mortality Hotspot Analysis">
+  <img src="./AADR 2001-2007.jpg" alt="Age-Adjusted Death Rates 2001-2007">
+  <img src="./AADR 2008-2014.jpg" alt="Age-Adjusted Death Rates 2008-2014">
+  <img src="./AADR 2015-2020.jpg" alt="Age-Adjusted Death Rates 2015-2020">
+  <img src="./Rate Change 1.jpg" alt="Mortality Rate Change Analysis 1">
+  <img src="./Rate change 2.jpg" alt="Mortality Rate Change Analysis 2">
 </div>
 
 **Interpretation:**
