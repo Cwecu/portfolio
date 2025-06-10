@@ -172,10 +172,4 @@ I'm actively seeking opportunities in GIS analysis, urban planning, and public h
 *Portfolio last updated: June 2025*
 """
 
-# Save the updated file
-index_path = "/mnt/data/index.md"
-with open(index_path, "w") as f:
-    f.write(full_index_md)
-
-index_path  # Return path to the user
 
