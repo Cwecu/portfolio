@@ -1,6 +1,6 @@
 # Full index.md content with updated Project 1 section included
 
-full_index_md = """
+
 # Nicholas Lawson | GIS Analyst Portfolio
 
 <img src="./profile.jpg.jfif" style="float: right; border-radius: 50%; width: 120px; margin-left: 20px;" />
