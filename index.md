@@ -47,7 +47,7 @@ This portfolio showcases projects that demonstrate my ability to tackle complex 
 📄 [View Research Summary](./project2_liver_disease/summary.md)  
 📊 [Statistical Analysis](./project2_liver_disease/statistics.html)
 
-<img src="./images/liver_disease_hotspot_sample.png" alt="Liver Disease Hotspots" style="width: 100%; max-width: 600px;" />
+<img src="./liver_disease_hotspot_sample.png.jpg" alt="Liver Disease Hotspots" style="width: 100%; max-width: 600px;" />
 
 ---
 
