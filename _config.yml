@@ -1,12 +1,7 @@
-title: Nicholas Lawson GIS Portfolio
-description: A professional portfolio showcasing GIS and spatial analysis projects by Nicholas Lawson.
 baseurl: ""
-url: "https://cwecu.github.io/portfolio"  # Fixed this line
+url: "https://cwecu.github.io/portfolio"
 theme: minima
 repository: cwecu/portfolio
-author:
-  name: Nicholas Lawson
-  email: nickklas96@gmail.com
 social_links:
   linkedin: https://www.linkedin.com/in/your-profile
   github: https://github.com/cwecu
@@ -18,4 +13,3 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-  # Removed README.md from here
