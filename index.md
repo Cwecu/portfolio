@@ -1,6 +1,6 @@
 # Nicholas Lawson | GIS Analyst Portfolio
 
-<img src="./images/profile.jpg" alt="Nicholas Lawson" style="float: right; border-radius: 50%; width: 120px; margin-left: 20px;" />
+<img src="./images/profile.jpg" alt="![image_alt](https://github.com/Cwecu/portfolio/blob/f5faa71c0838d615f0cf436cf56a4de725b5a809/profile.jpg.jfif)" style="float: right; border-radius: 50%; width: 120px; margin-left: 20px;" />
 
 ## 👋 About Me
 
