@@ -42,10 +42,10 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 
 .slider1 img, .slider2 img, .slider3 img {
   width: 100%;
-  height: 400px;
   flex-shrink: 0;
-  object-fit: contain;
-  background-color: #f5f5f5;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Animation for 3 images */
