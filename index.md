@@ -441,7 +441,7 @@
         <div class="skill-category">
             <h3>🗺️ GIS & Spatial Analysis</h3>
             <ul>
-                <li><strong>e GIS:</strong> ArcGIS Pro, ArcGIS Online</li>
+                <li><strong>GIS:</strong> ArcGIS Pro, ArcGIS Online, QGIS</li>
                 <li><strong>Advanced Analysis:</strong> Network Analyst, Spatial Analyst, 3D Analyst, Geostatistical Analyst</li>
                 <li><strong>Statistical Methods:</strong> Geographically Weighted Regression, Hotspot Analysis, Spatial Autocorrelation</li>
                 <li><strong>Remote Sensing:</strong> LiDAR processing, Image classification, Change detection</li>
