@@ -147,8 +147,8 @@ _Concentration: Geographic Information Systems_
 
 I'm actively seeking opportunities in GIS analysis, urban planning, and public health research. Let's discuss how spatial analysis can drive better decision-making in your organization.
 
-📧 **Email:** nicholas.lawson@email.com  
-💼 **LinkedIn:** [nicholas-lawson-gis](https://www.linkedin.com/in/your-profile)  
+📧 **Email:** nickklas96@gmail.com  
+💼 **LinkedIn:** (https://www.linkedin.com/in/nicholas-lawson-a3b861b6/) 
 💻 **GitHub:** [cwecu](https://github.com/cwecu)  
 📍 **Location:** Dallas-Fort Worth, Texas
 
