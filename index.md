@@ -135,15 +135,16 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 _University of North Texas, 2025_  
 _Concentration: Geographic Information Systems & Health and Medical Geography_
 
+**Bachelor of Art in Geography and Resource Development**  
+_University of Ghana, 2018_  
+_Concentration: Geographic Information Systems,  Cities and Urbanisation, Transportation_
+
 **Relevant Coursework**
 - Advanced GIS Analysis
 - Health Geography  
 - Urban Planning
 - Spatial Statistics
-
-  **Bachelor of Art in Geography and Resource Development**  
-_University of Ghana, 2018_  
-_Concentration: Geographic Information Systems,  Cities and Urbanisation, Transportation_
+ 
 
 ---
 
