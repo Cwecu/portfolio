@@ -206,7 +206,7 @@
             <h1>Nicholas Lawson</h1>
             <h2>🗺️ GIS Analyst Portfolio</h2>
             
-            <p>I am <strong>Nicholas Lawson</strong>, an aspiring professional with a strong foundation in geospatial data analysis, research, and project coordination. I have experience using tools such as ArcGIS Pro, and spatial analysis techniques to support data-driven decision-making. With a diverse background in education, business development, and client engagement, I bring a well-rounded perspective to geospatial projects. I am eager to apply my growing expertise in GIS to solve complex problems and contribute meaningfully to your organization's spatial initiatives.</p>
+            <p>I am <strong>Nicholas Lawson</strong>, an aspiring professional with a strong foundation in geospatial data analysis, research, and project coordination. I have experience using tools such as ArcGIS Pro, QGIS and spatial analysis techniques to support data-driven decision-making. With a diverse background in education, business development, and client engagement, I bring a well-rounded perspective to geospatial projects. I am eager to apply my growing expertise in GIS to solve complex problems and contribute meaningfully to your organization's spatial initiatives.</p>
             
             <div class="competencies">
                 <h3>Core Competencies</h3>
@@ -239,7 +239,7 @@
                 <li><strong>16% reduction</strong> in low-income food desert classification (385 → 325 tracts)</li>
                 <li><strong>10% improvement</strong> in overall food access mapping accuracy (1,127 → 1,010 desert tracts)</li>
                 <li><strong>Enhanced data quality:</strong> Expanded retailer database by 268 previously unmapped locations</li>
-                <li><strong>Policy Impact:</strong> Results adopted by Dallas County Health Department for resource allocation planning</li>
+                <li><strong>Policy Impact:</strong> Results shared with the City of Dallas at the 2025 North Texas Climate Symposium</li>
             </ul>
         </div>
 
@@ -307,7 +307,7 @@
             <img src="./Diabetes and Food deserts.jpg" alt="Diabetes and Food Deserts Correlation">
         </div>
 
-        <p><strong>Strategic Impact:</strong> This spatial analysis framework enabled public health agencies to shift from food-access-only interventions to comprehensive social determinants approaches, improving resource allocation efficiency and community health outcomes measurement.</p>
+        <p><strong>Strategic Impact:</strong> This spatial analysis framework will enable public health agencies to shift from food-access-only interventions to comprehensive social determinants approaches, improving resource allocation efficiency and community health outcomes measurement.</p>
     </div>
 
     <div class="project">
