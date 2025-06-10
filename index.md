@@ -86,27 +86,37 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 
 **Challenge:** Accurate building inventory and volume estimation for urban planning without costly field surveys.
 
-**Approach:** Used LiDAR point clouds to classify buildings, estimate volumes, and convert raster data into usable building polygons.
+**Objective:**  
+Estimate small-area population using LiDAR-derived building metrics (count, area, volume) across 125 census blocks in Waco, Texas.
 
-**Tools Used:** ArcGIS Pro, LAS Dataset, Raster Calculations, Python
+**Study Area:**  
+Waco, a mid-sized city with 140,000 residents, offers a mix of urban, suburban, and semi-rural environments—ideal for testing population estimation models in transitional landscapes.
 
-**Spatial Analysis:**
-- Generated DSM, DTM, DHM from LAS data
-- Isolated building masks and converted rasters to vector polygons
+**Approach:**  
+High-resolution LiDAR data (TNRIS) and 2020 Census block data were integrated using ArcGIS Pro. The methodology included:
+- Generation of DSM, DTM, and DHM
+- Building extraction (threshold > 2.2m)
+- Binary mask filtering and footprint vectorization
+- Calculation of count, area, and volume metrics
+- Population estimation using OLS regression models
 
-**Summary Statistics:**
-- Buildings extracted: 15,847
-- Mean building height: 7.4 meters
-- Total estimated volume: ~1.6 million m³
-- Classification accuracy: 94%
+**Model Results:**
 
-**Interpretation:**
-- Enabled 3D building inventory with high spatial accuracy.
-- Scalable approach for city planning, disaster preparedness, and zoning enforcement.
+| Model | Metric Used       | R²      | Pop. Estimate | Error (%)     |
+|-------|-------------------|---------|---------------|----------------|
+| 1     | Building Count    | 0.6259  | 5,713.01      | +0.0001%       |
+| 2     | Building Area     | 0.5815  | 5,709.54      | −0.06%         |
+| 3     | Building Volume   | 0.1635  | 5,656.80      | −0.98%         |
 
-<img src="./lidar_buildings_sample.png.jpg" alt="LiDAR Building Extraction" style="width: 100%; max-width: 600px;" />
+**Key Takeaways:**
+- **Building count** was the most accurate and interpretable metric for population estimation in Waco’s mixed-density environment.
+- **Volume** was the weakest predictor due to the influence of non-residential or tall commercial buildings.
+- Results align with literature emphasizing building count and area as effective proxies in semi-urban contexts.
 
----
+**Implications:**
+- Supports scalable LiDAR methods for urban planning, emergency response, and infrastructure management.
+- Future work should incorporate land-use data, socio-demographic context, or machine learning for improved precision.
+
 
 ## 📈 Technical Skills
 
