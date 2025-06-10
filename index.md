@@ -1,4 +1,3 @@
-
 # Nicholas Lawson | GIS Analyst Portfolio
 
 <img src="./profile.jpg.jfif" style="float: right; border-radius: 50%; width: 120px; margin-left: 20px;" />
@@ -12,7 +11,109 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 - **Analysis:** Geographically Weighted Regression (GWR), Network Analysis, Hotspot Analysis
 - **Specializations:** Health Geography, Urban Planning, LiDAR Processing
 
---- 
+<style>
+.slider1, .slider2, .slider3 {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #f8f9fa;
+}
+
+.slider1 .slides {
+  display: flex;
+  animation: slide3 15s infinite;
+}
+
+.slider2 .slides {
+  display: flex;
+  animation: slide4 20s infinite;
+}
+
+.slider3 .slides {
+  display: flex;
+  animation: slide6 30s infinite;
+}
+
+.slider1 .slides {
+  width: 300%;
+}
+
+.slider2 .slides {
+  width: 400%;
+}
+
+.slider3 .slides {
+  width: 600%;
+}
+
+.slider1 img {
+  width: calc(100% / 3);
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.slider2 img {
+  width: calc(100% / 4);
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.slider3 img {
+  width: calc(100% / 6);
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Animation for 3 images */
+@keyframes slide3 {
+  0% { transform: translateX(0%); }
+  30% { transform: translateX(0%); }
+  33% { transform: translateX(-33.33%); }
+  63% { transform: translateX(-33.33%); }
+  66% { transform: translateX(-66.66%); }
+  96% { transform: translateX(-66.66%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Animation for 4 images */
+@keyframes slide4 {
+  0% { transform: translateX(0%); }
+  22% { transform: translateX(0%); }
+  25% { transform: translateX(-25%); }
+  47% { transform: translateX(-25%); }
+  50% { transform: translateX(-50%); }
+  72% { transform: translateX(-50%); }
+  75% { transform: translateX(-75%); }
+  97% { transform: translateX(-75%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Animation for 6 images */
+@keyframes slide6 {
+  0% { transform: translateX(0%); }
+  14% { transform: translateX(0%); }
+  16.66% { transform: translateX(-16.66%); }
+  30.66% { transform: translateX(-16.66%); }
+  33.33% { transform: translateX(-33.33%); }
+  47.33% { transform: translateX(-33.33%); }
+  50% { transform: translateX(-50%); }
+  64% { transform: translateX(-50%); }
+  66.66% { transform: translateX(-66.66%); }
+  80.66% { transform: translateX(-66.66%); }
+  83.33% { transform: translateX(-83.33%); }
+  97.33% { transform: translateX(-83.33%); }
+  100% { transform: translateX(0%); }
+}
+</style>
+
+---
 
 ## 🍎 Project 1: 🌆 Urbanization, Food Security & Spatial Access in DFW
 
@@ -34,10 +135,12 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 - Low-income food desert tracts dropped from 385 to 325 (16% reduction)
 
 **Slideshow:**
-<div class="slideshow-container" id="slideshow1">
-  <img src="./food_desert_map_sample.png.jpg" alt="Food Desert Map Analysis">
-  <img src="./Food Deserts hotspot.jpg" alt="Food Desert Hotspot Analysis">
-  <img src="./Food Access.jpg" alt="Food Access Comprehensive Map">
+<div class="slider1">
+  <div class="slides">
+    <img src="./food_desert_map_sample.png.jpg" alt="Food Desert Map Analysis">
+    <img src="./Food Deserts hotspot.jpg" alt="Food Desert Hotspot Analysis">
+    <img src="./Food Access.jpg" alt="Food Access Comprehensive Map">
+  </div>
 </div>
 
 ---
@@ -68,11 +171,13 @@ Used Geographically Weighted Regression (GWR) to test local associations between
 - Diabetes model R² = **0.82**
 
 **Slideshow:**
-<div class="slideshow-container" id="slideshow2">
-  <img src="./GWR and Obesity.jpg" alt="Geographically Weighted Regression - Obesity Analysis">
-  <img src="./GWR and Diabtes.jpg" alt="Geographically Weighted Regression - Diabetes Analysis">
-  <img src="./Obesity and Food Deserts.jpg" alt="Obesity and Food Deserts Correlation">
-  <img src="./Diabetes and Food deserts.jpg" alt="Diabetes and Food Deserts Correlation">
+<div class="slider2">
+  <div class="slides">
+    <img src="./GWR and Obesity.jpg" alt="Geographically Weighted Regression - Obesity Analysis">
+    <img src="./GWR and Diabtes.jpg" alt="Geographically Weighted Regression - Diabetes Analysis">
+    <img src="./Obesity and Food Deserts.jpg" alt="Obesity and Food Deserts Correlation">
+    <img src="./Diabetes and Food deserts.jpg" alt="Diabetes and Food Deserts Correlation">
+  </div>
 </div>
 
 **Interpretation:**  
@@ -100,15 +205,17 @@ Food access is **associated** with poor health outcomes in specific areas, but *
   - Hispanic population (R² = 0.32)
   - Obesity (R² = 0.30)
   - Income (R² = 0.25)
-
+ 
 **Slideshow:**
-<div class="slideshow-container" id="slideshow3">
-  <img src="./liver_disease_hotspot_sample.png.jpg" alt="Liver Disease Mortality Hotspot Analysis">
-  <img src="./AADR 2001-2007.jpg" alt="Age-Adjusted Death Rates 2001-2007">
-  <img src="./AADR 2008-2014.jpg" alt="Age-Adjusted Death Rates 2008-2014">
-  <img src="./AADR 2015-2020.jpg" alt="Age-Adjusted Death Rates 2015-2020">
-  <img src="./Rate Change 1.jpg" alt="Mortality Rate Change Analysis 1">
-  <img src="./Rate change 2.jpg" alt="Mortality Rate Change Analysis 2">
+<div class="slider3">
+  <div class="slides">
+    <img src="./liver_disease_hotspot_sample.png.jpg" alt="Liver Disease Mortality Hotspot Analysis">
+    <img src="./AADR 2001-2007.jpg" alt="Age-Adjusted Death Rates 2001-2007">
+    <img src="./AADR 2008-2014.jpg" alt="Age-Adjusted Death Rates 2008-2014">
+    <img src="./AADR 2015-2020.jpg" alt="Age-Adjusted Death Rates 2015-2020">
+    <img src="./Rate Change 1.jpg" alt="Mortality Rate Change Analysis 1">
+    <img src="./Rate change 2.jpg" alt="Mortality Rate Change Analysis 2">
+  </div>
 </div>
 
 **Interpretation:**
@@ -187,64 +294,21 @@ _Concentration: Geographic Information Systems, Cities and Urbanisation, Transpo
 
 **Relevant Coursework**
 - Advanced GIS Analysis
-- Health Geography
+- Health Geography  
+- Urban Planning
+- Spatial Statistics
 
-<style>
-  /* Slideshow container */
-  .slideshow-container {
-    position: relative;
-    max-width: 100%;
-    height: 500px;  /* Set a fixed height for proper slideshow behavior */
-    margin: 20px auto 40px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  /* Style for the images */
-  .slideshow-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  /* Ensures the image covers the container without distortion */
-    display: none;
-    transition: opacity 1s ease-in-out;  /* Smooth transition */
-  }
-  /* Show active images */
-  .slideshow-container img.active {
-    display: block;
-    opacity: 1;
-  }
-  .slideshow-container img.inactive {
-    opacity: 0;
-  }
-</style>
+---
 
-<script>
-  // Slideshow function for each slideshow container
-  function initSlideshow(containerId, interval=4000) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-    const slides = container.querySelectorAll('img');
-    let current = 0;
+## 📞 Let's Connect
 
-    // Start by showing the first image
-    slides[current].classList.add('active');
-    slides[current].classList.remove('inactive');
+I'm actively seeking opportunities in GIS analysis, urban planning, and public health research. Let's discuss how spatial analysis can drive better decision-making in your organization.
 
-    setInterval(() => {
-      slides[current].classList.add('inactive');  // Hide the current image
-      slides[current].classList.remove('active'); // Remove active class
+📧 **Email:** nickklas96@gmail.com  
+💼 **LinkedIn:** [Nicholas Lawson](https://www.linkedin.com/in/nicholas-lawson-a3b861b6/)  
+💻 **GitHub:** [cwecu](https://github.com/cwecu)  
+📍 **Location:** Dallas-Fort Worth, Texas
 
-      current = (current + 1) % slides.length;  // Move to the next slide
+---
 
-      slides[current].classList.add('active');  // Show the next image
-      slides[current].classList.remove('inactive');  // Ensure the new image fades in
-    }, interval);
-  }
-
-  // Initialize all slideshows
-  document.addEventListener('DOMContentLoaded', () => {
-    initSlideshow('slideshow1', 4000);
-    initSlideshow('slideshow2', 5000);
-    initSlideshow('slideshow3', 4500);
-  });
-</script>
+*Portfolio last updated: June 2025*
