@@ -1,13 +1,10 @@
-# Full index.md content with updated Project 1 section included
-
-
 # Nicholas Lawson | GIS Analyst Portfolio
 
 <img src="./profile.jpg.jfif" style="float: right; border-radius: 50%; width: 120px; margin-left: 20px;" />
 
 ## 👋 About Me
 
-I'm **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spatial analysis, and health geography. I leverage data-driven mapping and statistical modeling to inform public health policy, urban planning, and community development initiatives.
+I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spatial analysis, and health geography. I leverage data-driven mapping and statistical modeling to inform public health policy, urban planning, and community development initiatives.
 
 ### Core Competencies
 - **Software:** ArcGIS Pro, QGIS, Python for GIS
