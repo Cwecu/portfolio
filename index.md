@@ -13,13 +13,13 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 
 ---
 
-## 🍎 Project 1: Redefining Food Deserts in North Texas
+## 🍎 Project 1: 🌆 Urbanization, Food Security & Spatial Access in DFW
 
-**Challenge:** Traditional food desert definitions may overlook alternative food sources, potentially misrepresenting food accessibility in diverse communities.
+**Challenge:** Despite being part of a major metropolitan region, the urban cores of Dallas and Fort Worth continue to exhibit widespread food insecurity. Paradoxically, areas with high population density and infrastructure are home to some of the region’s most persistent food deserts. Traditional definitions—based solely on proximity to supermarkets—fail to capture the lived realities of these communities, where cultural preferences, mobility limitations, and overlooked food retailers reshape access. This study addresses the spatial mismatch between where people live and where healthy food is truly available.
 
 **Approach:** Comprehensive mapping that includes farmers' markets and ethnic grocery stores alongside traditional supermarkets to provide a more nuanced view of food access.
 
-**Tools Used:** ArcGIS Pro, Network Analyst, USDA SNAP Retailer Locator, CDC PLACES, American Community Survey
+**Tools Used:** ArcGIS Pro, Network Analyst, USDA SNAP Retailer Locator, CDC PLACES, American Community Survey, Transport Network
 
 **Spatial Analysis:**
 - Used Network Analyst to generate 1-mile service areas from food retailers.
@@ -32,24 +32,38 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 - Food desert tracts (expanded definition): 1,010 (10% reduction)
 - Low-income food desert tracts dropped from 385 to 325 (16% reduction)
 
-**Health & GWR Findings:**
-- Food deserts explained 52% of obesity variation (p = 0.008) and 40% of diabetes variation (p = 0.12)
-- Strongest associations found in southern Dallas and western Tarrant Counties
+- <img src="./food_desert_map_sample.png.jpg" alt="Food Desert Analysis" style="width: 100%; max-width: 600px;" />
 
-**Social Determinants Insight:**
-- Food deserts were not strong predictors on their own (p > 0.27)
-- Significant predictors included:
-  - Age 65+ (strong for diabetes)
-  - Race/ethnicity: Black (linked to obesity), Hispanic (linked to both)
-  - Education (negative correlation with both outcomes)
-  - Poverty (linked to obesity)
-- Comprehensive model explained 89% of obesity and 82% of diabetes variation
 
-**Interpretation:**
-- The inclusion of smaller and culturally specific food sources reduced misclassification of access.
-- Social and economic conditions more strongly predict chronic health outcomes than food deserts alone.
+## 🍎 Food Deserts and Chronic Disease in DFW: Association vs. Causality
 
-<img src="./food_desert_map_sample.png.jpg" alt="Food Desert Analysis" style="width: 100%; max-width: 600px;" />
+**Objective:**  
+Examine the spatial relationship between food desert classification and the prevalence of obesity and diabetes using regression models.
+
+**Approach:**  
+Used Geographically Weighted Regression (GWR) to test local associations between food access and chronic disease rates across Dallas-Fort Worth census tracts.
+
+**Statistical Highlights:**
+- **Obesity**: R² = 0.52 (significant, p = 0.008)
+- **Diabetes**: R² = 0.40 (not significant, p = 0.12)
+- Highest coefficients in southern Dallas and western Tarrant Counties
+
+**Factors:**
+- Food deserts alone were **not causal predictors** of disease (p > 0.27)
+- Stronger predictors included:
+  - Age 65+
+  - Education level
+  - Race/ethnicity (Black and Hispanic)
+  - Poverty
+
+**Integrated Model Performance:**
+- Obesity model R² = **0.89**
+- Diabetes model R² = **0.82**
+
+**Interpretation:**  
+Food access is **associated** with poor health outcomes in specific areas, but **causality** is best explained through a broader social determinants framework. Spatial modeling helps identify where food environments align with health risks, guiding targeted interventions.
+
+
 
 ---
 
