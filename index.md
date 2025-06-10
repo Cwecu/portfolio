@@ -11,32 +11,82 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 - **Analysis:** Geographically Weighted Regression (GWR), Network Analysis, Hotspot Analysis
 - **Specializations:** Health Geography, Urban Planning, LiDAR Processing
 
-- <style>
+<style>
 .slider1, .slider2, .slider3 {
   position: relative;
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.slider1 .slides, .slider2 .slides, .slider3 .slides {
+
+.slider1 .slides {
   display: flex;
   width: 300%;
-  animation: slide 15s infinite;
+  animation: slide3 15s infinite;
 }
+
+.slider2 .slides {
+  display: flex;
+  width: 400%;
+  animation: slide4 20s infinite;
+}
+
+.slider3 .slides {
+  display: flex;
+  width: 600%;
+  animation: slide6 30s infinite;
+}
+
 .slider1 img, .slider2 img, .slider3 img {
   width: 100%;
+  height: 400px;
   flex-shrink: 0;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #f5f5f5;
 }
-@keyframes slide {
+
+/* Animation for 3 images */
+@keyframes slide3 {
   0% { transform: translateX(0%); }
-  33% { transform: translateX(0%); }
-  36% { transform: translateX(-100%); }
-  66% { transform: translateX(-100%); }
-  69% { transform: translateX(-200%); }
-  100% { transform: translateX(-200%); }
+  30% { transform: translateX(0%); }
+  33% { transform: translateX(-33.33%); }
+  63% { transform: translateX(-33.33%); }
+  66% { transform: translateX(-66.66%); }
+  96% { transform: translateX(-66.66%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Animation for 4 images */
+@keyframes slide4 {
+  0% { transform: translateX(0%); }
+  22% { transform: translateX(0%); }
+  25% { transform: translateX(-25%); }
+  47% { transform: translateX(-25%); }
+  50% { transform: translateX(-50%); }
+  72% { transform: translateX(-50%); }
+  75% { transform: translateX(-75%); }
+  97% { transform: translateX(-75%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Animation for 6 images */
+@keyframes slide6 {
+  0% { transform: translateX(0%); }
+  14% { transform: translateX(0%); }
+  16.66% { transform: translateX(-16.66%); }
+  30.66% { transform: translateX(-16.66%); }
+  33.33% { transform: translateX(-33.33%); }
+  47.33% { transform: translateX(-33.33%); }
+  50% { transform: translateX(-50%); }
+  64% { transform: translateX(-50%); }
+  66.66% { transform: translateX(-66.66%); }
+  80.66% { transform: translateX(-66.66%); }
+  83.33% { transform: translateX(-83.33%); }
+  97.33% { transform: translateX(-83.33%); }
+  100% { transform: translateX(0%); }
 }
 </style>
 
@@ -44,7 +94,7 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 
 ## 🍎 Project 1: 🌆 Urbanization, Food Security & Spatial Access in DFW
 
-**Challenge:** Despite being part of a major metropolitan region, the urban cores of Dallas and Fort Worth continue to exhibit widespread food insecurity. Paradoxically, areas with high population density and infrastructure are home to some of the region’s most persistent food deserts. Traditional definitions—based solely on proximity to supermarkets—fail to capture the lived realities of these communities, where cultural preferences, mobility limitations, and overlooked food retailers reshape access. This study addresses the spatial mismatch between where people live and where healthy food is truly available.
+**Challenge:** Despite being part of a major metropolitan region, the urban cores of Dallas and Fort Worth continue to exhibit widespread food insecurity. Paradoxically, areas with high population density and infrastructure are home to some of the region's most persistent food deserts. Traditional definitions—based solely on proximity to supermarkets—fail to capture the lived realities of these communities, where cultural preferences, mobility limitations, and overlooked food retailers reshape access. This study addresses the spatial mismatch between where people live and where healthy food is truly available.
 
 **Approach:** Comprehensive mapping that includes farmers' markets and ethnic grocery stores alongside traditional supermarkets to provide a more nuanced view of food access.
 
@@ -61,15 +111,16 @@ I am **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spa
 - Food desert tracts (expanded definition): 1,010 (10% reduction)
 - Low-income food desert tracts dropped from 385 to 325 (16% reduction)
 
-- **Slideshow:**
+**Slideshow:**
 <div class="slider1">
   <div class="slides">
-    <img src="./food_desert_map_sample.png.jpg" alt="Map 1">
-    <img src="./Food Deserts hotspot.jpg" alt="Map 2">
-    <img src="./Food Access.jpg" alt="Map 3">
+    <img src="./food_desert_map_sample.png.jpg" alt="Food Desert Map Analysis">
+    <img src="./Food Deserts hotspot.jpg" alt="Food Desert Hotspot Analysis">
+    <img src="./Food Access.jpg" alt="Food Access Comprehensive Map">
   </div>
 </div>
 
+---
 
 ## 🍎 Project 2: Food Deserts and Chronic Disease in DFW: Association vs. Causality
 
@@ -99,16 +150,15 @@ Used Geographically Weighted Regression (GWR) to test local associations between
 **Slideshow:**
 <div class="slider2">
   <div class="slides">
-    <img src="./GWR and Obesity.jpg" alt="Obesity GWR">
-    <img src="./GWR and Diabtes.jpg" alt="Diabetes GWR">
-    <img src="./Obesity and Food Deserts.jpg" alt="Obesity FD">
+    <img src="./GWR and Obesity.jpg" alt="Geographically Weighted Regression - Obesity Analysis">
+    <img src="./GWR and Diabtes.jpg" alt="Geographically Weighted Regression - Diabetes Analysis">
+    <img src="./Obesity and Food Deserts.jpg" alt="Obesity and Food Deserts Correlation">
+    <img src="./Diabetes and Food deserts.jpg" alt="Diabetes and Food Deserts Correlation">
   </div>
 </div>
 
 **Interpretation:**  
 Food access is **associated** with poor health outcomes in specific areas, but **causality** is best explained through a broader social determinants framework. Spatial modeling helps identify where food environments align with health risks, guiding targeted interventions.
-
-
 
 ---
 
@@ -133,12 +183,15 @@ Food access is **associated** with poor health outcomes in specific areas, but *
   - Obesity (R² = 0.30)
   - Income (R² = 0.25)
  
-    **Slideshow:**
+**Slideshow:**
 <div class="slider3">
   <div class="slides">
-    <img src="./liver_disease_hotspot_sample.png.jpg" alt="LD Hotspot">
-    <img src="./AADR 2001-2007.jpg" alt="AADR 1">
-    <img src="./AADR 2008-2014.jpg" alt="AADR 2">
+    <img src="./liver_disease_hotspot_sample.png.jpg" alt="Liver Disease Mortality Hotspot Analysis">
+    <img src="./AADR 2001-2007.jpg" alt="Age-Adjusted Death Rates 2001-2007">
+    <img src="./AADR 2008-2014.jpg" alt="Age-Adjusted Death Rates 2008-2014">
+    <img src="./AADR 2015-2020.jpg" alt="Age-Adjusted Death Rates 2015-2020">
+    <img src="./Rate Change 1.jpg" alt="Mortality Rate Change Analysis 1">
+    <img src="./Rate change 2.jpg" alt="Mortality Rate Change Analysis 2">
   </div>
 </div>
 
@@ -146,11 +199,9 @@ Food access is **associated** with poor health outcomes in specific areas, but *
 - Public health risks are spatially clustered and vary regionally.
 - Policy focus should be tailored for regions like South Texas where multiple risk factors converge.
 
-
-
 ---
 
-## 🏗️ Project 3: LiDAR Building Extraction in Waco, TX
+## 🏗️ Project 4: LiDAR Building Extraction in Waco, TX
 
 **Challenge:** Accurate building inventory and volume estimation for urban planning without costly field surveys.
 
@@ -177,7 +228,7 @@ High-resolution LiDAR data (TNRIS) and 2020 Census block data were integrated us
 | 3     | Building Volume   | 0.1635  | 5,656.80      | −0.98%         |
 
 **Key Takeaways:**
-- **Building count** was the most accurate and interpretable metric for population estimation in Waco’s mixed-density environment.
+- **Building count** was the most accurate and interpretable metric for population estimation in Waco's mixed-density environment.
 - **Volume** was the weakest predictor due to the influence of non-residential or tall commercial buildings.
 - Results align with literature emphasizing building count and area as effective proxies in semi-urban contexts.
 
@@ -185,6 +236,7 @@ High-resolution LiDAR data (TNRIS) and 2020 Census block data were integrated us
 - Supports scalable LiDAR methods for urban planning, emergency response, and infrastructure management.
 - Future work should incorporate land-use data, socio-demographic context, or machine learning for improved precision.
 
+---
 
 ## 📈 Technical Skills
 
@@ -215,14 +267,13 @@ _Concentration: Geographic Information Systems & Health and Medical Geography_
 
 **Bachelor of Art in Geography and Resource Development**  
 _University of Ghana, 2018_  
-_Concentration: Geographic Information Systems,  Cities and Urbanisation, Transportation_
+_Concentration: Geographic Information Systems, Cities and Urbanisation, Transportation_
 
 **Relevant Coursework**
 - Advanced GIS Analysis
 - Health Geography  
 - Urban Planning
 - Spatial Statistics
- 
 
 ---
 
@@ -231,13 +282,10 @@ _Concentration: Geographic Information Systems,  Cities and Urbanisation, Transp
 I'm actively seeking opportunities in GIS analysis, urban planning, and public health research. Let's discuss how spatial analysis can drive better decision-making in your organization.
 
 📧 **Email:** nickklas96@gmail.com  
-💼 **LinkedIn:** (https://www.linkedin.com/in/nicholas-lawson-a3b861b6/) 
+💼 **LinkedIn:** [Nicholas Lawson](https://www.linkedin.com/in/nicholas-lawson-a3b861b6/)  
 💻 **GitHub:** [cwecu](https://github.com/cwecu)  
 📍 **Location:** Dallas-Fort Worth, Texas
 
 ---
 
 *Portfolio last updated: June 2025*
-"""
-
-
