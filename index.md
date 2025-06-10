@@ -1,9 +1,8 @@
 # Nicholas Lawson | GIS Analyst Portfolio
 
-![image_alt](https://github.com/Cwecu/portfolio/blob/f5faa71c0838d615f0cf436cf56a4de725b5a809/profile.jpg.jfif)
+<img src="./images/profile.jpg" alt="Nicholas Lawson" style="float: right; border-radius: 50%; width: 120px; margin-left: 20px;" />
 
-
-About Me
+## 👋 About Me
 
 I'm **Nicholas Lawson**, a recent Geography graduate with expertise in GIS, spatial analysis, and health geography. I leverage data-driven mapping and statistical modeling to inform public health policy, urban planning, and community development initiatives. 
 
@@ -29,7 +28,7 @@ This portfolio showcases projects that demonstrate my ability to tackle complex 
 📄 [View Detailed Analysis](./project1_food_deserts/summary.md)  
 🗺️ [Interactive Map](./project1_food_deserts/map.html)
 
-!![image_alt](https://github.com/Cwecu/portfolio/blob/f5faa71c0838d615f0cf436cf56a4de725b5a809/food_desert_map_sample.png.jpg)
+<img src="./images/food_desert_map_sample.png" alt="Food Desert Analysis" style="width: 100%; max-width: 600px;" />
 
 ---
 
@@ -46,7 +45,7 @@ This portfolio showcases projects that demonstrate my ability to tackle complex 
 📄 [View Research Summary](./project2_liver_disease/summary.md)  
 📊 [Statistical Analysis](./project2_liver_disease/statistics.html)
 
-![image_alt](https://github.com/Cwecu/portfolio/blob/c57e959b1f66688e7b2b9ab7fef75d2c6017a76b/liver_disease_hotspot_sample.png.jpg)
+<img src="./images/liver_disease_hotspot_sample.png" alt="Liver Disease Hotspots" style="width: 100%; max-width: 600px;" />
 
 ---
 
@@ -63,7 +62,7 @@ This portfolio showcases projects that demonstrate my ability to tackle complex 
 📄 [View Technical Report](./project3_lidar_waco/summary.md)  
 🎯 [3D Visualization](./project3_lidar_waco/3d_model.html)
 
-![LiDAR Building Extraction](./images/lidar_buildings_sample.png)
+<img src="./images/lidar_buildings_sample.png" alt="LiDAR Building Extraction" style="width: 100%; max-width: 600px;" />
 
 ---
 
