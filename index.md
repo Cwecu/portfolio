@@ -1,38 +1,3 @@
-<script>
-  // Slideshow function for each slideshow container
-  function initSlideshow(containerId, interval=4000) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-    const slides = container.querySelectorAll('img');
-    let current = 0;
-
-    // Start by showing the first image
-    slides[current].classList.add('active');
-    slides[current].classList.remove('inactive');
-
-    setInterval(() => {
-      slides[current].classList.add('inactive');  // Hide the current image
-      slides[current].classList.remove('active'); // Remove active class
-
-      current = (current + 1) % slides.length;  // Move to the next slide
-
-      slides[current].classList.add('active');  // Show the next image
-      slides[current].classList.remove('inactive');  // Ensure the new image fades in
-    }, interval);
-  }
-
-  // Initialize all slideshows
-  document.addEventListener('DOMContentLoaded', () => {
-    initSlideshow('slideshow1', 4000);
-    initSlideshow('slideshow2', 5000);
-    initSlideshow('slideshow3', 4500);
-  });
-</script>
-
----
-layout: default
-title: Nicholas Lawson | GIS Analyst Portfolio
----
 
 # Nicholas Lawson | GIS Analyst Portfolio
 
@@ -222,15 +187,4 @@ _Concentration: Geographic Information Systems, Cities and Urbanisation, Transpo
 
 **Relevant Coursework**
 - Advanced GIS Analysis
-- Health Geography  
-- Urban Planning
-- Spatial Statistics
-
----
-
-## 📞 Let's Connect
-
-I'm always open to discussing GIS research, data analysis, and mapping projects. Feel free to reach out via:
-
-- Email: [nicholas.lawson@email.com](mailto:nicholas.lawson@email.com)
-- LinkedIn: [@NicholasLawson](https://www.linkedin.com/in/nicholaslawson/)
+- Health Geography
