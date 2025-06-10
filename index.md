@@ -69,7 +69,7 @@
         .slideshow-container {
             position: relative;
             width: 100%;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 20px auto;
             border-radius: 15px;
             overflow: hidden;
@@ -79,13 +79,14 @@
 
         .slideshow-container img {
             width: 100%;
-            height: 400px;
-            object-fit: cover;
+            height: 600px;
+            object-fit: contain;
             position: absolute;
             top: 0;
             left: 0;
             opacity: 0;
             transition: opacity 1s ease-in-out;
+            background: white;
         }
 
         .slideshow-container img.active {
@@ -189,7 +190,7 @@
             }
 
             .slideshow-container img {
-                height: 250px;
+                height: 400px;
             }
 
             .skills-grid {
