@@ -15,8 +15,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            background-color: #f8f9fa;
         }
 
         .container {
@@ -25,21 +24,22 @@
             padding: 20px;
         }
 
+        /* Header */
         .header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 40px 20px;
             text-align: center;
+            margin-bottom: 0;
         }
 
         .profile-container {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 30px;
-            margin-bottom: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .profile-img {
@@ -47,215 +47,196 @@
             width: 120px;
             height: 120px;
             object-fit: cover;
-            border: 4px solid #667eea;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border: 4px solid rgba(255,255,255,0.2);
         }
 
         .profile-content h1 {
-            color: #2c3e50;
             font-size: 2.5em;
             margin-bottom: 10px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
-        .profile-content h2 {
-            color: #34495e;
-            font-size: 1.3em;
-            margin-bottom: 15px;
+        .profile-content p {
+            font-size: 1.2em;
+            opacity: 0.9;
         }
 
         /* Tab Navigation */
+        .tab-navigation {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 0;
+        }
+
         .tab-nav {
             display: flex;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            overflow-x: auto;
-            gap: 5px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        .tab-btn {
+        .tab-button {
             flex: 1;
-            padding: 15px 20px;
-            background: transparent;
+            padding: 20px;
+            background: none;
             border: none;
-            border-radius: 10px;
             cursor: pointer;
+            font-size: 1.1em;
             font-weight: 600;
+            color: #666;
+            border-bottom: 3px solid transparent;
             transition: all 0.3s ease;
-            color: #64748b;
-            white-space: nowrap;
-            min-width: 120px;
         }
 
-        .tab-btn.active {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        .tab-button:hover {
+            background-color: #f8f9fa;
+            color: #2c3e50;
         }
 
-        .tab-btn:hover:not(.active) {
-            background: rgba(102, 126, 234, 0.1);
-            transform: translateY(-1px);
+        .tab-button.active {
+            color: #3498db;
+            border-bottom-color: #3498db;
+            background-color: #fff;
         }
 
         /* Tab Content */
         .tab-content {
-            display: none;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            animation: fadeIn 0.5s ease;
+            background: white;
+            min-height: 600px;
         }
 
-        .tab-content.active {
+        .tab-pane {
+            display: none;
+            padding: 40px;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        .tab-pane.active {
             display: block;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
-        h2 {
-            color: #2c3e50;
-            font-size: 1.8em;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid;
-            border-image: linear-gradient(135deg, #667eea, #764ba2) 1;
-        }
-
-        h3 {
-            color: #2c3e50;
-            margin: 25px 0 15px 0;
-            font-size: 1.3em;
+        /* Welcome Tab Styles */
+        .welcome-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
         }
 
         .competencies {
-            background: linear-gradient(135deg, #f8f9ff, #e8f0fe);
-            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 30px;
             border-radius: 15px;
-            margin: 25px 0;
-            border-left: 5px solid #667eea;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .competencies h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.3em;
         }
 
         .competencies ul {
-            margin: 0;
-            padding-left: 20px;
+            list-style: none;
+            padding: 0;
         }
 
         .competencies li {
-            margin-bottom: 8px;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
         }
 
-        /* Project Navigation */
-        .project-nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 30px;
-            justify-content: center;
+        .competencies li:last-child {
+            border-bottom: none;
         }
 
-        .project-nav-btn {
-            padding: 12px 20px;
-            background: linear-gradient(135deg, #f8f9ff, #e8f0fe);
-            border: 2px solid #667eea;
-            border-radius: 10px;
-            cursor: pointer;
-            font-weight: 600;
-            color: #2c3e50;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-        }
-
-        .project-nav-btn.active {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        .project-nav-btn:hover:not(.active) {
-            background: rgba(102, 126, 234, 0.1);
-            transform: translateY(-1px);
-        }
-
-        /* Project Styles */
-        .project-grid {
+        .skills-grid {
             display: grid;
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
         }
 
-        .project-card {
-            background: linear-gradient(135deg, #f8f9ff, #e8f0fe);
-            padding: 30px;
-            border-radius: 20px;
-            border-left: 6px solid #667eea;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: none;
+        .skill-category {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #3498db;
         }
 
-        .project-card.active {
-            display: block;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
-
-        .project-card h3 {
+        .skill-category h3 {
             color: #2c3e50;
-            font-size: 1.4em;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-category li {
+            padding: 8px 0;
+            color: #555;
+        }
+
+        /* Project Tab Styles */
+        .project {
+            background: #fff;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 15px;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .project h2 {
+            color: #2c3e50;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 1.5em;
+        }
+
+        .project h3 {
+            color: #34495e;
+            margin: 20px 0 10px 0;
         }
 
         .highlight-box {
             background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-            padding: 20px;
-            border-radius: 15px;
+            padding: 25px;
+            border-radius: 10px;
             margin: 20px 0;
             border-left: 4px solid #2196f3;
         }
 
         .stats-table {
-            background: white;
-            border-radius: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
             padding: 25px;
-            margin: 25px 0;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin: 20px 0;
         }
 
         .stats-table table {
             width: 100%;
             border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         .stats-table th,
         .stats-table td {
-            padding: 15px;
+            padding: 12px 15px;
             text-align: left;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid #ddd;
         }
 
         .stats-table th {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background-color: #3498db;
             color: white;
             font-weight: 600;
         }
@@ -264,11 +245,11 @@
         .slideshow-container {
             position: relative;
             width: 100%;
-            max-width: 800px;
+            max-width: 900px;
             margin: 25px auto;
-            border-radius: 20px;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
             background: #f8f9fa;
         }
 
@@ -292,83 +273,67 @@
             position: relative;
         }
 
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
-        }
-
-        .skill-category {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            border-top: 4px solid #667eea;
-            transition: transform 0.3s ease;
-        }
-
-        .skill-category:hover {
-            transform: translateY(-5px);
-        }
-
-        .skill-category h3 {
-            color: #2c3e50;
-            font-size: 1.2em;
-            margin-bottom: 15px;
-        }
-
-        /* Experience Styles */
+        /* Experience Tab Styles */
         .experience-item {
-            background: linear-gradient(135deg, #f8f9ff, #e8f0fe);
-            padding: 25px;
+            background: white;
+            padding: 30px;
+            margin: 25px 0;
             border-radius: 15px;
-            margin: 20px 0;
-            border-left: 5px solid #667eea;
-            transition: transform 0.3s ease;
+            border-left: 5px solid #27ae60;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
-        .experience-item:hover {
-            transform: translateX(5px);
-        }
-
-        .job-title {
-            font-size: 1.3em;
-            font-weight: bold;
+        .experience-item h3 {
             color: #2c3e50;
+            font-size: 1.3em;
             margin-bottom: 5px;
         }
 
         .company-info {
-            color: #667eea;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .date-range {
-            color: #64748b;
+            color: #7f8c8d;
             font-style: italic;
             margin-bottom: 15px;
+            font-size: 1em;
         }
 
-        .job-responsibilities {
+        .experience-item ul {
             list-style: none;
-            padding-left: 0;
+            padding: 0;
         }
 
-        .job-responsibilities li {
-            margin-bottom: 8px;
+        .experience-item li {
+            padding: 8px 0;
             padding-left: 20px;
             position: relative;
+            color: #555;
         }
 
-        .job-responsibilities li:before {
-            content: "▸";
-            color: #667eea;
-            font-weight: bold;
+        .experience-item li:before {
+            content: "→";
             position: absolute;
             left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        /* Education Section */
+        .education-section {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .education-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .education-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
         }
 
         /* Contact Section */
@@ -376,7 +341,7 @@
             background: linear-gradient(135deg, #2c3e50, #34495e);
             color: white;
             padding: 40px;
-            border-radius: 20px;
+            border-radius: 15px;
             text-align: center;
             margin-top: 40px;
         }
@@ -390,19 +355,13 @@
 
         .contact-item {
             padding: 15px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255,255,255,0.1);
             border-radius: 10px;
-            transition: background 0.3s ease;
-        }
-
-        .contact-item:hover {
-            background: rgba(255, 255, 255, 0.2);
         }
 
         .contact-section a {
-            color: #667eea;
+            color: #3498db;
             text-decoration: none;
-            font-weight: 600;
         }
 
         .contact-section a:hover {
@@ -416,12 +375,17 @@
                 text-align: center;
             }
 
-            .container {
-                padding: 10px;
+            .tab-nav {
+                flex-direction: column;
             }
 
-            .tab-content {
-                padding: 25px;
+            .tab-button {
+                border-bottom: 1px solid #eee;
+                border-right: none;
+            }
+
+            .tab-pane {
+                padding: 20px;
             }
 
             .slideshow-container img {
@@ -432,131 +396,118 @@
                 grid-template-columns: 1fr;
             }
 
-            .tab-nav {
-                flex-wrap: wrap;
-            }
-
-            .tab-btn {
-                min-width: 100px;
-                font-size: 0.9em;
-            }
-
-            .project-nav {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .project-nav-btn {
-                width: 100%;
-                max-width: 300px;
+            .contact-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="profile-container">
-                <img src="./profile.jpg.jfif" alt="Nicholas Lawson" class="profile-img" />
-                <div class="profile-content">
-                    <h1>Nicholas Lawson</h1>
-                    <h2>🗺️ GIS Analyst & Spatial Data Scientist</h2>
-                    <p>Geography graduate specializing in GIS analysis, spatial modeling, and health geography. Combining advanced geospatial technologies with statistical analysis to solve complex urban planning and public health challenges.</p>
-                </div>
+    <!-- Header -->
+    <div class="header">
+        <div class="profile-container">
+            <img src="./profile.jpg.jfif" alt="Nicholas Lawson" class="profile-img" />
+            <div class="profile-content">
+                <h1>Nicholas Lawson</h1>
+                <p>🗺️ GIS Analyst & Spatial Data Scientist</p>
             </div>
         </div>
+    </div>
 
+    <!-- Tab Navigation -->
+    <div class="tab-navigation">
         <div class="tab-nav">
-            <button class="tab-btn active" onclick="showTab('welcome')">🏠 Welcome</button>
-            <button class="tab-btn" onclick="showTab('projects')">📊 Projects</button>
-            <button class="tab-btn" onclick="showTab('experience')">💼 Experience</button>
+            <button class="tab-button active" onclick="openTab(event, 'welcome')">
+                🏠 About Me
+            </button>
+            <button class="tab-button" onclick="openTab(event, 'projects')">
+                📊 Projects
+            </button>
+            <button class="tab-button" onclick="openTab(event, 'experience')">
+                💼 Experience
+            </button>
         </div>
+    </div>
 
+    <!-- Tab Content -->
+    <div class="tab-content">
         <!-- Welcome Tab -->
-        <div id="welcome" class="tab-content active">
-            <h2>Welcome to My Portfolio</h2>
-            
-            <p>I am <strong>Nicholas Lawson</strong>, a Geography graduate specializing in GIS analysis, spatial modeling, and health geography. I combine advanced geospatial technologies with statistical analysis to solve complex urban planning and public health challenges, delivering actionable insights that drive evidence-based decision making.</p>
-            
-            <div class="competencies">
-                <h3>Core Competencies</h3>
-                <ul>
-                    <li><strong>GIS Software:</strong> ArcGIS Pro, ArcGIS Online, QGIS, Python (ArcPy, GeoPandas)</li>
-                    <li><strong>Spatial Analysis:</strong> Geographically Weighted Regression, Network Analysis, Hotspot Analysis, Service Area Modeling</li>
-                    <li><strong>Data Management:</strong> SQL, PostgreSQL/PostGIS, Feature Class Design, Geodatabase Management</li>
-                    <li><strong>Remote Sensing:</strong> LiDAR Processing, Image Classification, Digital Elevation Models</li>
-                </ul>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>🗺️ GIS & Spatial Analysis</h3>
+        <div id="welcome" class="tab-pane active">
+            <div class="welcome-content">
+                <h2>Welcome to My Portfolio</h2>
+                <p style="font-size: 1.1em; margin: 20px 0;">I am <strong>Nicholas Lawson</strong>, an aspiring professional with a strong foundation in geospatial data analysis, research, and project coordination. I have experience using tools such as ArcGIS Pro, QGIS and spatial analysis techniques to support data-driven decision-making. With a diverse background in education, business development, and client engagement, I bring a well-rounded perspective to geospatial projects. I am eager to apply my growing expertise in GIS to solve complex problems and contribute meaningfully to your organization's spatial initiatives.</p>
+                
+                <div class="competencies">
+                    <h3>🎯 Core Competencies</h3>
                     <ul>
-                        <li><strong>Enterprise GIS:</strong> ArcGIS Pro, ArcGIS Online, Portal for ArcGIS</li>
-                        <li><strong>Advanced Analysis:</strong> Network Analyst, Spatial Analyst, 3D Analyst, Geostatistical Analyst</li>
-                        <li><strong>Statistical Methods:</strong> Geographically Weighted Regression, Hotspot Analysis, Spatial Autocorrelation</li>
-                        <li><strong>Remote Sensing:</strong> LiDAR processing, Image classification, Change detection</li>
+                        <li><strong>GIS Software:</strong> ArcGIS Pro, ArcGIS Online, QGIS, Python (ArcPy, GeoPandas)</li>
+                        <li><strong>Spatial Analysis:</strong> Geographically Weighted Regression, Network Analysis, Hotspot Analysis, Service Area Modeling</li>
+                        <li><strong>Data Management:</strong> SQL, PostgreSQL/PostGIS, Feature Class Design, Geodatabase Management</li>
+                        <li><strong>Remote Sensing:</strong> LiDAR Processing, Image Classification, Digital Elevation Models</li>
                     </ul>
                 </div>
 
-                <div class="skill-category">
-                    <h3>💻 Programming & Data Management</h3>
-                    <ul>
-                        <li><strong>Python GIS:</strong> ArcPy, GeoPandas, Shapely, Rasterio, GDAL</li>
-                        <li><strong>Database Management:</strong> PostgreSQL/PostGIS, SQL Server, File Geodatabase</li>
-                        <li><strong>Statistical Software:</strong> R (spatial packages), SPSS, SAS</li>
-                        <li><strong>Web Development:</strong> ArcGIS JavaScript API, Leaflet, HTML/CSS</li>
-                    </ul>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>🗺️ GIS & Spatial Analysis</h3>
+                        <ul>
+                            <li><strong>GIS:</strong> ArcGIS Pro, ArcGIS Online, QGIS</li>
+                            <li><strong>Advanced Analysis:</strong> Network Analyst, Spatial Analyst, 3D Analyst, Geostatistical Analyst</li>
+                            <li><strong>Statistical Methods:</strong> Geographically Weighted Regression, Hotspot Analysis, Spatial Autocorrelation</li>
+                            <li><strong>Remote Sensing:</strong> LiDAR processing, Image classification, Change detection</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>💻 Programming & Data Management</h3>
+                        <ul>
+                            <li><strong>Python GIS:</strong> ArcPy, GeoPandas</li>
+                            <li><strong>Database Management:</strong> SQL Server, File Geodatabase</li>
+                            <li><strong>Statistical Software:</strong> R (spatial packages), SPSS, SAS</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>📊 Business & Communication</h3>
+                        <ul>
+                            <li><strong>Project Management:</strong> Requirements gathering, timeline development, stakeholder coordination</li>
+                            <li><strong>Data Visualization:</strong> Dashboard creation, executive reporting, cartographic design</li>
+                            <li><strong>Client Relations:</strong> Technical presentation, training delivery, solution consulting</li>
+                            <li><strong>Documentation:</strong> Technical writing, methodology documentation, user guides</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>📊 Business & Communication</h3>
-                    <ul>
-                        <li><strong>Project Management:</strong> Requirements gathering, timeline development, stakeholder coordination</li>
-                        <li><strong>Data Visualization:</strong> Dashboard creation, executive reporting, cartographic design</li>
-                        <li><strong>Client Relations:</strong> Technical presentation, training delivery, solution consulting</li>
-                        <li><strong>Documentation:</strong> Technical writing, methodology documentation, user guides</li>
+                <div class="education-section">
+                    <h2>🎓 Education & Certifications</h2>
+                    
+                    <div class="education-item">
+                        <h3>Master of Science in Geography</h3>
+                        <p><em>University of North Texas, 2025</em><br>
+                        <em>Concentration: Geographic Information Systems & Health and Medical Geography</em></p>
+                    </div>
+
+                    <div class="education-item">
+                        <h3>Bachelor of Art in Geography and Resource Development</h3>
+                        <p><em>University of Ghana, 2018</em><br>
+                        <em>Concentration: Geographic Information Systems, Cities and Urbanisation, Transportation</em></p>
+                    </div>
+
+                    <h3>Relevant Coursework</h3>
+                    <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                        <li>• Advanced GIS Analysis</li>
+                        <li>• Health Geography</li>
+                        <li>• Urban Planning</li>
+                        <li>• Spatial Statistics</li>
                     </ul>
                 </div>
             </div>
-
-            <h2>🎓 Education & Certifications</h2>
-            
-            <div class="highlight-box">
-                <h3>Master of Science in Geography</h3>
-                <p><em>University of North Texas, 2025</em><br>
-                <em>Concentration: Geographic Information Systems & Health and Medical Geography</em></p>
-            </div>
-
-            <div class="highlight-box">
-                <h3>Bachelor of Art in Geography and Resource Development</h3>
-                <p><em>University of Ghana, 2018</em><br>
-                <em>Concentration: Geographic Information Systems, Cities and Urbanisation, Transportation</em></p>
-            </div>
-
-            <h3>Relevant Coursework</h3>
-            <ul>
-                <li>Advanced GIS Analysis</li>
-                <li>Health Geography</li>
-                <li>Urban Planning</li>
-                <li>Spatial Statistics</li>
-            </ul>
         </div>
 
         <!-- Projects Tab -->
-        <div id="projects" class="tab-content">
-            <h2>📊 Featured Projects</h2>
-            
-            <div class="project-nav">
-                <button class="project-nav-btn active" onclick="showProject('project1')">🍎 Food Access Analysis</button>
-                <button class="project-nav-btn" onclick="showProject('project2')">📊 Health Analysis</button>
-                <button class="project-nav-btn" onclick="showProject('project3')">🏥 Mortality Study</button>
-                <button class="project-nav-btn" onclick="showProject('project4')">🏗️ LiDAR Analysis</button>
-            </div>
-
-            <!-- Project 1 -->
-            <div id="project1" class="project-card active">
-                <h3>🍎 Multi-Criteria Food Access Analysis - Dallas-Fort Worth Metroplex</h3>
+        <div id="projects" class="tab-pane">
+            <div class="project">
+                <h2>🍎 Project 1: Multi-Criteria Food Access Analysis - Dallas-Fort Worth Metroplex</h2>
                 
                 <p><strong>Business Problem:</strong> Traditional food desert mapping underestimates food accessibility in diverse urban communities by excluding culturally-relevant retailers and alternative food sources. This creates gaps in public health planning and community development resource allocation across the 1,536 census tracts in the DFW region.</p>
 
@@ -574,7 +525,7 @@
                         <li><strong>16% reduction</strong> in low-income food desert classification (385 → 325 tracts)</li>
                         <li><strong>10% improvement</strong> in overall food access mapping accuracy (1,127 → 1,010 desert tracts)</li>
                         <li><strong>Enhanced data quality:</strong> Expanded retailer database by 268 previously unmapped locations</li>
-                        <li><strong>Policy Impact:</strong> Results adopted by Dallas County Health Department for resource allocation planning</li>
+                        <li><strong>Policy Impact:</strong> Results shared with the City of Dallas at the 2025 North Texas Climate Symposium</li>
                     </ul>
                 </div>
 
@@ -596,11 +547,10 @@
                 </div>
             </div>
 
-            <!-- Project 2 -->
-            <div id="project2" class="project-card">
-                <h3>📊 Geographically Weighted Regression Analysis - Chronic Disease & Food Environment</h3>
+            <div class="project">
+                <h2>🍎 Project 2: Geographically Weighted Regression Analysis - Chronic Disease & Food Environment</h2>
                 
-                <p><strong>Business Problem:</strong> Public health agencies needed to understand the spatial relationship between food environment and chronic disease prevalence to optimize intervention strategies and resource deployment across diverse Dallas-Fort Worth communities.</p>
+                <p><strong>Business Problem:</strong> Public health agencies needs to understand the spatial relationship between food environment and chronic disease prevalence to optimize intervention strategies and resource deployment across diverse Dallas-Fort Worth communities.</p>
 
                 <p><strong>Analytical Approach:</strong> Applied advanced spatial statistics using Geographically Weighted Regression (GWR) to model local variations in obesity and diabetes rates, moving beyond traditional global correlation models to identify spatially-varying relationships.</p>
 
@@ -620,22 +570,6 @@
                     </ul>
                 </div>
 
-                <div class="stats-table">
-                    <h3>Key Analytical Findings:</h3>
-                    <ul>
-                        <li><strong>Primary Discovery:</strong> Food environment shows spatial association but not direct causality with chronic disease (p > 0.27)</li>
-                        <li><strong>Significant Predictors Identified:</strong>
-                            <ul>
-                                <li>Population aged 65+ (β = 0.34, p < 0.001)</li>
-                                <li>Educational attainment (β = -0.28, p < 0.01)</li>
-                                <li>Race/ethnicity composition (β = 0.31, p < 0.01)</li>
-                                <li>Poverty rate (β = 0.42, p < 0.001)</li>
-                            </ul>
-                        </li>
-                        <li><strong>Business Value:</strong> Analysis informed targeted intervention strategies for Dallas County Health Department, prioritizing social determinants over food access alone</li>
-                    </ul>
-                </div>
-
                 <div class="slideshow-container" id="slider2">
                     <img src="./GWR and Obesity.jpg" alt="Geographically Weighted Regression - Obesity Analysis" class="active">
                     <img src="./GWR and Diabtes.jpg" alt="Geographically Weighted Regression - Diabetes Analysis">
@@ -643,22 +577,15 @@
                     <img src="./Diabetes and Food deserts.jpg" alt="Diabetes and Food Deserts Correlation">
                 </div>
 
-                <p><strong>Strategic Impact:</strong> This spatial analysis framework enabled public health agencies to shift from food-access-only interventions to comprehensive social determinants approaches, improving resource allocation efficiency and community health outcomes measurement.</p>
+                <p><strong>Strategic Impact:</strong> This spatial analysis framework will enable public health agencies to shift from food-access-only interventions to comprehensive social determinants approaches, improving resource allocation efficiency and community health outcomes measurement.</p>
             </div>
 
-            <!-- Project 3 -->
-            <div id="project3" class="project-card">
-                <h3>🏥 Spatiotemporal Mortality Analysis - Texas Liver Disease Surveillance</h3>
+            <div class="project">
+                <h2>🏥 Project 3: Spatiotemporal Mortality Analysis - Texas Liver Disease Surveillance</h2>
                 
-                <p><strong>Business Problem:</strong> State health departments required comprehensive mortality surveillance system to identify emerging geographic clusters of liver disease and allocate prevention resources across Texas's 254 counties over a 20-year period.</p>
+                <p><strong>Business Problem:</strong> State health departments requires comprehensive mortality surveillance system to identify emerging geographic clusters of liver disease and allocate prevention resources across Texas's 254 counties over a 20-year period.</p>
 
                 <p><strong>GIS Solution:</strong> Developed automated spatiotemporal analysis workflow combining CDC WONDER mortality data with County Health Rankings to identify persistent disease hotspots and quantify risk factor relationships using advanced spatial statistics.</p>
-
-                <p><strong>Technical Implementation:</strong>
-                <br>• <strong>Data Integration:</strong> Processed 20 years of age-adjusted death rates across 207 counties with complete datasets
-                <br>• <strong>Hotspot Analysis:</strong> Applied Getis-Ord Gi* statistics with temporal weighting to identify persistent clusters
-                <br>• <strong>GWR Analysis:</strong> Modeled local relationships between mortality and 15+ socioeconomic/health variables
-                <br>• <strong>Trend Analysis:</strong> Calculated rate-of-change statistics across three temporal periods (2001-2007, 2008-2014, 2015-2020)</p>
 
                 <div class="highlight-box">
                     <h3>Quantifiable Results:</h3>
@@ -670,39 +597,136 @@
                     </ul>
                 </div>
 
-                <div class="stats-table">
-                    <h3>Statistical Analysis Results:</h3>
-                    <ul>
-                        <li><strong>Dataset:</strong> 207 counties analyzed with complete 20-year mortality records</li>
-                        <li><strong>Spatial Autocorrelation:</strong> Moran's I = 0.34 (p < 0.001), confirming significant clustering</li>
-                        <li><strong>Top Predictive Variables (GWR coefficients):</strong>
-                            <ul>
-                                <li>Diabetes prevalence: R² = 0.43, β = 0.38</li>
-                                <li>Hispanic population percentage: R² = 0.32, β = 0.29</li>
-                                <li>Adult obesity rate: R² = 0.30, β = 0.26</li>
-                                <li>Median household income: R² = 0.25, β = -0.22</li>
-                            </ul>
-                        </li>
-                        <li><strong>Temporal Trends:</strong> 23% increase in mortality rates in hotspot counties vs. 8% statewide average</li>
-                    </ul>
-                </div>
-
                 <div class="slideshow-container" id="slider3">
                     <img src="./liver_disease_hotspot_sample.png.jpg" alt="Liver Disease Mortality Hotspot Analysis" class="active">
                     <img src="./AADR 2001-2007.jpg" alt="Age-Adjusted Death Rates 2001-2007">
                     <img src="./AADR 2008-2014.jpg" alt="Age-Adjusted Death Rates 2008-2014">
                     <img src="./AADR 2015-2020.jpg" alt="Age-Adjusted Death Rates 2015-2020">
                     <img src="./Rate Change 1.jpg" alt="Mortality Rate Change Analysis 1">
-                    <img src="./Rate change 2.jpg" alt="Rate Change Analysis 2">
+                    <img src="./Rate change 2.jpg" alt="Mortality Rate Change Analysis 2">
                 </div>
-
-                <p><strong>Strategic Impact:</strong> This comprehensive surveillance system enabled state health officials to implement region-specific prevention strategies, resulting in 15% improvement in early detection programs and more efficient deployment of limited public health resources across high-risk geographic areas.</p>
             </div>
 
-            <!-- Project 4 -->
-            <div id="project4" class="project-card">
-                <h3>🏗️ Automated Population Estimation Using LiDAR Remote Sensing</h3>
+            <div class="project">
+                <h2>🏗️ Project 4: Automated Population Estimation Using LiDAR Remote Sensing</h2>
                 
-                <p><strong>Business Problem:</strong> Municipal planning departments needed cost-effective method for small-area population estimation without expensive field surveys. Traditional census data becomes outdated quickly, creating gaps in infrastructure planning and emergency response preparation.</p>
+                <p><strong>Business Problem:</strong> Municipal planning departments needs cost-effective method for small-area population estimation without expensive field surveys. Traditional census data becomes outdated quickly, creating gaps in infrastructure planning and emergency response preparation.</p>
 
-                <p><strong>GIS Solution:</strong>
+                <p><strong>GIS Solution:</strong> Developed automated workflow using high-resolution LiDAR data to extract building metrics and create statistical models for population estimation. This remote sensing approach provides near real-time population estimates at census block level.</p>
+
+                <div class="highlight-box">
+                    <h3>Model Performance & Validation:</h3>
+                    <p><strong>Study Area:</strong> 125 census blocks in Waco, TX (pop. 140,000) representing mixed urban-suburban-rural environments</p>
+                    <ul>
+                        <li><strong>Data Processing:</strong> Successfully extracted 3,247 building footprints from 1m resolution LiDAR</li>
+                        <li><strong>Model Accuracy:</strong> Building count model achieved 99.99% accuracy (error: +0.0001%)</li>
+                        <li><strong>Validation Method:</strong> Cross-validated against official 2020 Census block populations</li>
+                        <li><strong>Processing Efficiency:</strong> Automated workflow reduced analysis time from weeks to 6 hours</li>
+                    </ul>
+                </div>
+
+                <div class="stats-table">
+                    <h3>Comparative Model Results:</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Model Type</th>
+                                <th>LiDAR Metric</th>
+                                <th>R² Value</th>
+                                <th>Population Estimate</th>
+                                <th>Accuracy Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #e8f5e8;">
+                                <td><strong>Optimal Model</strong></td>
+                                <td>Building Count</td>
+                                <td>0.6259</td>
+                                <td>5,713.01</td>
+                                <td><strong>99.99%</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Secondary Model</td>
+                                <td>Building Area (m²)</td>
+                                <td>0.5815</td>
+                                <td>5,709.54</td>
+                                <td>99.94%</td>
+                            </tr>
+                            <tr>
+                                <td>Alternative Model</td>
+                                <td>Building Volume (m³)</td>
+                                <td>0.1635</td>
+                                <td>5,656.80</td>
+                                <td>99.02%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Tab -->
+        <div id="experience" class="tab-pane">
+            <h2 style="text-align: center; margin-bottom: 40px; color: #2c3e50;">Professional Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Teaching Assistant</h3>
+                <div class="company-info">University of North Texas, Denton, TX | Aug 2023 – May 2025</div>
+                <ul>
+                    <li>Used ArcGIS tools in instructional labs to support spatial learning outcomes</li>
+                    <li>Assisted in spatial data review, quality checks, and database updates for research activities</li>
+                    <li>Managed student submissions and resolved technical issues in GIS software</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Business Development Officer</h3>
+                <div class="company-info">Sambus Geospatial Ltd., Accra, Ghana | Nov 2021 – Jul 2023</div>
+                <ul>
+                    <li>Delivered custom GIS solutions using ArcGIS, resulting in 30% growth in client accounts</li>
+                    <li>Led training sessions and technical support for clients, improving GIS application rates</li>
+                    <li>Advised on spatial data accuracy and usage across industries, ensuring high-quality output</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Field Supervisor – 2021 Ghana Population and Housing Census</h3>
+                <div class="company-info">Ghana Statistical Service | May 2021 – Aug 2021</div>
+                <ul>
+                    <li>Supervised enumeration teams for the national census, achieving 98% accuracy in data reporting</li>
+                    <li>Managed and organized paper-based and digital work packets for archiving</li>
+                    <li>Resolved logistical issues and coordinated stakeholder engagement to ensure full area coverage</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Customer Service Executive</h3>
+                <div class="company-info">Sporty Group, Accra, Ghana | Dec 2020 – Nov 2021</div>
+                <ul>
+                    <li>Provided technical support and monitored ticket resolutions to maintain service quality</li>
+                    <li>Implemented QA measures to assess service call performance and user satisfaction</li>
+                    <li>Achieved 95% customer satisfaction through consistent issue tracking and resolution</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Communication/Administrative Assistant</h3>
+                <div class="company-info">University of Ghana – Public Affairs Directorate | 2018 – 2019</div>
+                <ul>
+                    <li>Produced internal communications and maintained department files with QA oversight</li>
+                    <li>Audited event documentation and reports for accuracy before release</li>
+                    <li>Streamlined administrative records, contributing to improved process efficiency</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>GIS & Transportation Intern</h3>
+                <div class="company-info">Greater Accra Passenger Transport Executive (GAPTE) | Jun 2017 – Aug 2017</div>
+                <ul>
+                    <li>Analyzed driver route data and submitted summary reports on system performance</li>
+                    <li>Assisted with QA of GIS transit data and supported documentation for regulatory compliance</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>
