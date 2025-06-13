@@ -204,8 +204,8 @@
         <img src="./profile.jpg.jfif" alt="Nicholas Lawson" class="profile-img" />
         <div class="profile-content">
             <h1>Nicholas Lawson</h1>
-            <h2>🗺️ GIS Analyst Portfolio</h2>
-            
+          
+      
             <p>I am <strong>Nicholas Lawson</strong>, an aspiring professional with a strong foundation in geospatial data analysis, research, and project coordination. I have experience using tools such as ArcGIS Pro, QGIS and spatial analysis techniques to support data-driven decision-making. With a diverse background in education, business development, and client engagement, I bring a well-rounded perspective to geospatial projects. I am eager to apply my growing expertise in GIS to solve complex problems and contribute meaningfully to your organization's spatial initiatives.</p>
             
             <div class="competencies">
