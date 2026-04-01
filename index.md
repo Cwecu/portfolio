@@ -206,7 +206,7 @@
             <h1>Nicholas Lawson</h1>
           
       
-            <p>I am <strong>Nicholas Lawson</strong>, an aspiring professional with a strong foundation in geospatial data analysis, research, and project coordination. I have experience using tools such as ArcGIS Pro, QGIS and spatial analysis techniques to support data-driven decision-making. With a diverse background in education, business development, and client engagement, I bring a well-rounded perspective to geospatial projects. I am eager to apply my growing expertise in GIS to solve complex problems and contribute meaningfully to your organization's spatial initiatives.</p>
+            <p>I am <strong>Nicholas Lawson</strong>, is a GIS Analyst with a strong foundation in geospatial data analysis, research, and project coordination. I have experience using tools such as ArcGIS Pro, QGIS and spatial analysis techniques to support data-driven decision-making. With a diverse background in education, business development, and client engagement, I bring a well-rounded perspective to geospatial projects. I am eager to apply my growing expertise in GIS to solve complex problems and contribute meaningfully to your organization's spatial initiatives.</p>
             
             <div class="competencies">
                 <h3>Core Competencies</h3>
@@ -500,7 +500,7 @@
             <div>📧 <strong>Email:</strong><br><a href="mailto:nickklas96@gmail.com">nickklas96@gmail.com</a></div>
             <div>💼 <strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/in/nicholas-lawson-a3b861b6/" target="_blank">Nicholas Lawson</a></div>
             <div>💻 <strong>GitHub:</strong><br><a href="https://github.com/cwecu" target="_blank">cwecu</a></div>
-            <div>📍 <strong>Location:</strong><br>Dallas-Fort Worth, Texas</div>
+            <div>📍 <strong>Location:</strong><br>Wichita, Kansas</div>
         </div>
         
         <p style="margin-top: 30px; font-style: italic;">Portfolio last updated: June 2025</p>
