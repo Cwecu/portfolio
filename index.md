@@ -38,9 +38,15 @@
         h1 { color: #2c3e50; margin-bottom: 5px; font-size: 2.5em; }
         .current-titles { color: #3498db; font-weight: 600; margin-bottom: 15px; font-size: 1.2em; }
         h2 { color: #34495e; border-bottom: 3px solid #3498db; padding-bottom: 10px; margin-top: 40px; }
-        h3 { color: #2c3e50; margin-top: 25px; }
+        
+        .card {
+            background: #f8f9fa;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 15px;
+            border-left: 5px solid #3498db;
+        }
 
-        /* Slideshow Styles */
         .slideshow-container {
             position: relative;
             width: 100%;
@@ -66,15 +72,6 @@
 
         .slideshow-container img.active { opacity: 1; }
         .slideshow-container img:first-child { position: relative; }
-
-        /* Project & Experience Cards */
-        .card {
-            background: #f8f9fa;
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 15px;
-            border-left: 5px solid #3498db;
-        }
 
         .highlight-box {
             background: linear-gradient(135deg, #e3f2fd, #bbdefb);
@@ -129,7 +126,7 @@
     <h2>💼 Professional Experience</h2>
     
     <div class="card">
-        <h3>GIS Analyst - Emergency Communications & Public Works</h3>
+        <h3>GIS Analyst</h3>
         <p><strong>Sedgwick County | Wichita, KS | Present</strong></p>
         <ul>
             <li>Support Emergency Communications operations through spatial analysis and mapping solutions.</li>
@@ -147,8 +144,7 @@
             <li>Designed and developed interactive ArcGIS Online dashboard tracking youth exposure to alcohol and hemp outlets across Texas.</li>
             <li>Created comprehensive story map to communicate spatial patterns of substance outlet density and youth accessibility.</li>
             <li>Performed spatial analysis to identify high-risk areas with elevated youth exposure to alcohol and hemp retailers.</li>
-            <li>Provided data-driven insights to support policy advocacy and community intervention strategies.</li>
-            <li>Delivered web-based GIS tools enabling non-technical users to explore and analyze statewide data.</li>
+            <li>Delivered web-based GIS tools including Experience Builder applications for non-technical users.</li>
         </ul>
     </div>
 
@@ -158,10 +154,10 @@
         <h2>📊 Project 1: Youth Substance Exposure Dashboard & Story Map</h2>
         <div class="highlight-box">
             <h3>Case Study:</h3>
-            <p><strong>Problem:</strong> Public health advocates needed a visual platform to demonstrate the high density of alcohol and hemp retailers surrounding schools in Texas.</p>
+            <p><strong>Problem:</strong> Public health advocates needed a spatial platform to visualize alcohol and hemp retailer density near schools and youth centers to support legislative changes.</p>
             <p><strong>Tools Used:</strong> ArcGIS Online, ArcGIS Dashboards, <strong>Experience Builder</strong>, and Story Maps.</p>
-            <p><strong>Results:</strong> Created a centralized hub that allows users to filter retailers by county and proximity to youth centers, identifying 47 high-risk clusters.</p>
-            <p><strong>Strategic Impact:</strong> The dashboard is currently used as the primary data tool for evidence-based policy recommendations to Texas state legislators.</p>
+            <p><strong>Results:</strong> Developed a multi-layered interactive suite allowing real-time filtering of statewide outlet data and proximity analysis.</p>
+            <p><strong>Impact:</strong> Actively used by advocacy organizations for evidence-based policy recommendations to Texas state legislators.</p>
         </div>
     </div>
 
@@ -175,26 +171,26 @@
         </div>
         <div class="highlight-box">
             <h3>Case Study:</h3>
-            <p><strong>Problem:</strong> Need for a statewide surveillance system to identify long-term mortality trends over 20 years.</p>
-            <p><strong>Tools Used:</strong> ArcGIS Pro, CDC WONDER Data, Getis-Ord Gi* Statistics.</p>
-            <p><strong>Results:</strong> Identified 12 persistent hotspots and documented a mortality rate increase nearly triple the state average in specific counties.</p>
-            <p><strong>Strategic Impact:</strong> Informed the Texas Department of State Health Services on where to deploy localized prevention programs, increasing early detection efficiency.</p>
+            <p><strong>Problem:</strong> Identifying long-term mortality clusters across 254 counties to optimize public health resource allocation.</p>
+            <p><strong>Tools Used:</strong> ArcGIS Pro, Getis-Ord Gi* Statistics, CDC WONDER Mortality Data.</p>
+            <p><strong>Results:</strong> Identified 12 persistent hotspots and achieved 87% prediction accuracy for future high-mortality areas.</p>
+            <p><strong>Impact:</strong> Directed state health prevention resources to high-risk geographic areas, improving early detection efficiency.</p>
         </div>
     </div>
 
     <div class="card">
         <h2>🍎 Project 3: Food Access Analysis - DFW Metroplex</h2>
         <div class="slideshow-container" id="slider-food">
-            <img src="./food_desert_map_sample.png.jpg" alt="Food Desert Map" class="active">
-            <img src="./Food Deserts hotspot.jpg" alt="Food Desert Hotspot">
+            <img src="./food_desert_map_sample.png.jpg" alt="Food Desert Analysis" class="active">
+            <img src="./Food Deserts hotspot.jpg" alt="Hotspot Analysis">
             <img src="./Food Access.jpg" alt="Food Access Map">
         </div>
         <div class="highlight-box">
             <h3>Case Study:</h3>
-            <p><strong>Problem:</strong> Urban food desert mapping often ignores ethnic grocers, leading to an overestimation of food insecurity in diverse areas.</p>
-            <p><strong>Tools Used:</strong> ArcGIS Network Analyst, Python, Custom Geocoding.</p>
-            <p><strong>Results:</strong> Discovered 268 unmapped retailers, leading to a 16% reduction in food desert classification errors.</p>
-            <p><strong>Strategic Impact:</strong> Adopted by City of Dallas planners to better target community development block grants (CDBG).</p>
+            <p><strong>Problem:</strong> Traditional models underestimate food accessibility by ignoring culturally-relevant ethnic retailers and small grocers.</p>
+            <p><strong>Tools Used:</strong> Network Analyst, Python (ArcPy), custom geocoding.</p>
+            <p><strong>Results:</strong> Reduced low-income food desert classification errors by 16% and identified 268 previously unmapped food sources.</p>
+            <p><strong>Impact:</strong> Shared with the City of Dallas at the 2025 North Texas Climate Symposium to guide urban development planning.</p>
         </div>
     </div>
 
@@ -203,14 +199,14 @@
         <div class="slideshow-container" id="slider-gwr">
             <img src="./GWR and Obesity.jpg" alt="Obesity GWR" class="active">
             <img src="./GWR and Diabtes.jpg" alt="Diabetes GWR">
-            <img src="./Obesity and Food Deserts.jpg" alt="Correlation">
+            <img src="./Obesity and Food Deserts.jpg" alt="Correlation Map">
         </div>
         <div class="highlight-box">
             <h3>Case Study:</h3>
-            <p><strong>Problem:</strong> Determine if physical food access is the primary driver of obesity and diabetes in North Texas.</p>
-            <p><strong>Tools Used:</strong> Geographically Weighted Regression (GWR), CDC PLACES Data.</p>
-            <p><strong>Results:</strong> Analysis proved that socio-economic factors (R²=0.89) were more influential than geographic distance to stores.</p>
-            <p><strong>Impact:</strong> Shifted health intervention strategies toward social determinant support rather than just opening new stores.</p>
+            <p><strong>Problem:</strong> Determine the spatial relationship between food environments and chronic disease prevalence to optimize interventions.</p>
+            <p><strong>Tools Used:</strong> Geographically Weighted Regression (GWR), ArcGIS Pro, CDC PLACES Health Data.</p>
+            <p><strong>Results:</strong> Proved that socio-economic determinants (poverty/age) were stronger predictors of disease than food access alone (R²=0.89).</p>
+            <p><strong>Impact:</strong> Informed Dallas County Health Department strategies to prioritize social determinants over food access solutions alone.</p>
         </div>
     </div>
 
@@ -218,10 +214,10 @@
         <h2>🏗️ Project 5: Automated Population Estimation via LiDAR</h2>
         <div class="highlight-box">
             <h3>Case Study:</h3>
-            <p><strong>Problem:</strong> Census data lag makes it difficult to plan for rapid urban growth and infrastructure needs.</p>
+            <p><strong>Problem:</strong> Municipal departments need cost-effective population estimates between decennial census updates for infrastructure planning.</p>
             <p><strong>Tools Used:</strong> LiDAR Remote Sensing, 3D Analyst, Morphological Filtering.</p>
-            <p><strong>Results:</strong> Built a model with 99.99% accuracy in estimating block-level population based on building volume and footprint.</p>
-            <p><strong>Strategic Impact:</strong> Provided a scalable methodology for municipalities to update population metrics annually at 10% of the cost of field surveys.</p>
+            <p><strong>Results:</strong> Achieved a 99.99% accuracy rate in building extraction and population estimation across a 125-block study area.</p>
+            <p><strong>Impact:</strong> Enabled annual population metrics updates at 10% of the cost of traditional field surveys.</p>
         </div>
     </div>
 
@@ -239,9 +235,9 @@
         <div class="skill-category">
             <h3>Web GIS & Development</h3>
             <ul>
-                <li><strong>Web Tools:</strong> ArcGIS Experience Builder, Dashboards, Story Maps</li>
-                <li><strong>Programming:</strong> Python (ArcPy, GeoPandas), SQL</li>
-                <li><strong>Data Visualization:</strong> Dashboard Design, Cartographic Design</li>
+                <li><strong>Platforms:</strong> Experience Builder, Dashboards, Story Maps</li>
+                <li><strong>Programming:</strong> Python (ArcPy), SQL</li>
+                <li><strong>Data Visualization:</strong> Cartographic Design, Executive Reporting</li>
             </ul>
         </div>
     </div>
@@ -249,16 +245,16 @@
     <h2>🎓 Education</h2>
     <div class="card">
         <h3>Master of Science in Geography</h3>
-        <p><strong>University of North Texas | 2025</strong></p>
-        <p>Concentration: Geographic Information Science (GIScience) & Health Geography</p>
+        <p><strong>University of North Texas | Denton, TX | 2025</strong></p>
+        <p>Concentration: Medical Geography and GIS</p>
     </div>
     <div class="card">
-        <h3>Bachelor of Science in Nursing</h3>
-        <p><strong>Pentecost University | Accra, Ghana</strong></p>
+        <h3>Graduate Certificate in Geographic Information System</h3>
+        <p><strong>University of North Texas | Denton, TX | 2025</strong></p>
     </div>
     <div class="card">
-        <h3>Graduate Certificate in Health Administration & Leadership</h3>
-        <p><strong>Confederation College | Canada</strong></p>
+        <h3>Bachelor of Arts in Geography</h3>
+        <p><strong>University of Ghana | Legon, Accra | 2018</strong></p>
     </div>
 
     <div class="contact-section">
